@@ -1,17 +1,79 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      ComSci Book Shop
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+    <ion-card>
+        <ion-card-content style="text-align:center;padding:0px" >
+
+              <ion-img width="300" height="200px" src="https://raw.githubusercontent.com/kesinee-bo/Images/master/bookshop3.jpg" ></ion-img>
+  
+        </ion-card-content>
+      </ion-card>
+            
+
+            <ion-list>
+              <ion-item>
+                <ion-icon name="book" item-start></ion-icon>
+                Mobile Technology
+                <button ion-button clear icon-only item-end (click)="showBookList('Mobile Technology')" > 
+                    <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="american-football" item-start></ion-icon>
+                Java
+                <button ion-button clear icon-only item-end (click)="showBookList('Java')" >
+                    <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="logo-android" item-start></ion-icon>
+                Microsoft .NET
+                <button ion-button clear icon-only item-end (click)="showBookList('Microsoft .NET')" >
+                    <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="bulb" item-start></ion-icon>
+                Programming
+                <button ion-button clear icon-only item-end (click)="showBookList('Programming')" >
+                  <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="baseball" item-start></ion-icon>
+                Software Engineering
+                <button ion-button clear icon-only item-end (click)="showBookList('Software Engineering')" >
+                    <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-icon name="leaf" item-start></ion-icon>
+                Web Development
+                <button ion-button clear icon-only item-end (click)="showBookList('Web Development')" >
+                    <ion-icon name="open" ></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                  <ion-icon name="medal" item-start></ion-icon>
+                  Internet
+                  <button ion-button clear icon-only item-end (click)="showBookList('Internet')">
+                      <ion-icon name="open" ></ion-icon>
+                  </button>
+                </ion-item>
+      
+            </ion-list>
+
+      
 </ion-content>
